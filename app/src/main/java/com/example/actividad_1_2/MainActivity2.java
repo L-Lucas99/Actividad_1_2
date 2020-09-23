@@ -21,5 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         tex.setText("Hola : " + valor);
 
+        getActionBar().hide();
+
     }
 }

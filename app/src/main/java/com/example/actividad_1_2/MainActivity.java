@@ -12,7 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     Button btn1, btn2;
     TextView txv1;
-    private View.OnClickListener corkyListener = new View.OnClickListener() {
+
+
+    private View.OnClickListener sigienteActivity = new View.OnClickListener() {
         public void onClick(View v) {
             Intent i = new Intent(MainActivity.this, MainActivity2.class);
             i.putExtra("nombre", txv1.getText().toString());
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn1 = findViewById(R.id.btn1);
-        btn1.setOnClickListener(corkyListener);
+        btn1.setOnClickListener(sigienteActivity);
 
         txv1 = findViewById(R.id.nombre);
 
