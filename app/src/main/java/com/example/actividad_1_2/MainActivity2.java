@@ -19,9 +19,9 @@ public class MainActivity2 extends AppCompatActivity {
         tex = findViewById(R.id.texv);
         String valor = getIntent().getStringExtra("nombre");
 
-        tex.setText("Hola : " + valor);
+        tex.setText("Hola " + valor);
 
-        getActionBar().hide();
+        getSupportActionBar().hide();
 
     }
 }
